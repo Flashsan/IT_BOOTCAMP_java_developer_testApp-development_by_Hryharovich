@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+    <changeSet id="1-add test data to table 'clients'"
+               author="Hryharovich">
+        <sql>
+            insert into clients (surname_client,
+                                 first_name_client,
+                                 patronymic_name_client,
+                                 email_client,
+                                 role_client)
+            values ('Aleksandr', 'Hryharovich', 'Vasilievich', 'algrigr@gmail.com', 'Administrator'),
+                   ('Aleksey', 'Selitskiy', 'Anatolevich', 'selitsckiy@mail.ru', 'Sale User'),
+                   ('Anatoly', 'Prilytskiy', 'Nikolaivich', 'lohmatov2000@gmail.com', 'Customer User'),
+                   ('Andrey', 'Solodkiy', 'Markovich', 'fhgjkjhk@gmail.com', 'Customer User'),
+                   ('Anton', 'Petrov', 'Anatolevich', 'zxc00@gmail.com', 'SECURE_API_USER'),
+                   ('Arkady', 'Prilytskiy', 'Vladislavovich', 'jkl90@gmail.com', 'Customer User'),
+                   ('Artem', 'Ivanov', 'Vasgenovich', 'bgt00@gmail.com', 'Customer User'),
+                   ('Artur', 'Romanov', 'Igorevich', 'plkm00@gmail.com', 'Customer User'),
+                   ('Boris', 'Belyak', 'Nikolaivich', 'Boris00@gmail.com', 'Customer User'),
+                   ('Vadim', 'Lytonin', 'Anatolevich', 'eatMe00@gmail.com', 'Customer User'),
+                   ('Valeriy', 'Danilyk', 'Markovich', 'drink00@gmail.com', 'Customer User'),
+                   ('Vasiliy', 'Markov', 'Ivanovich', 'Banan00@gmail.com', 'Customer User'),
+                   ('Aleksey', 'Novikov', 'Igorevich', 'TYUIte00@gmail.com', 'Customer User'),
+                   ('Valeriy', 'Kirasov', 'Anatolevich', 'kjiu00@gmail.com', 'Customer User'),
+                   ('Artur', 'Tarasevich', 'Petrovich', 'ku00@gmail.com', 'Sale User'),
+                   ('Anton', 'Dextor', 'Nikolaivich', 'zxc2001@gmail.com', 'Customer User'),
+                   ('Gennady', 'Dybrovskiy', 'Petrovich', 'adff@gmail.com', 'Customer User'),
+                   ('Denis', 'Nikolayev', 'Igorevich', 'cbr600@gmail.com', 'Customer User'),
+                   ('Yevgeny', 'Volkov', 'Anatolevich', 'a444a@gmail.com', 'Customer User'),
+                   ('Anton', 'Pale', 'Petrovich', 'maxSender@gmail.com', 'Sale User'),
+                   ('Valeriy', 'Borodich', 'Nikolaivich', 'AndreyTim00@gmail.com', 'Customer User');
+        </sql>
+    </changeSet>
+</databaseChangeLog>
